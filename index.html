@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./styles.css" />
+    <script defer src="./scripts/main.js" type="module"></script>
+
+    <title>Kanban Task Management</title>
+  </head>
+
+  <body>
+    <header>
+      <h2>Launch Career</h2>
+      <button id="add-new-task-btn">+ Add New Task</button>
+    </header>
+
+    <main class="board">
+      <div class="column" data-status="todo">
+        <h3>TODO</h3>
+        <div class="tasks-container"></div>
+      </div>
+
+      <div class="column" data-status="doing">
+        <h3>DOING</h3>
+        <div class="tasks-container"></div>
+      </div>
+
+      <div class="column" data-status="done">
+        <h3>DONE</h3>
+        <div class="tasks-container"></div>
+      </div>
+    </main>
+
+    <!-- Add Task Modal -->
+    <dialog id="add-task-modal">
+      <form id="task-form">
+        <h3>Add New Task</h3>
+
+        <input id="title-input" placeholder="Title" required />
+        <textarea id="desc-input" placeholder="Description"></textarea>
+
+        <select id="status-input">
+          <option value="todo">todo</option>
+          <option value="doing">doing</option>
+          <option value="done">done</option>
+        </select>
+
+        <button type="submit">Create Task</button>
+        <button type="button" id="close-modal">Cancel</button>
+      </form>
+    </dialog>
+  </body>
+</html>

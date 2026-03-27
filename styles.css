@@ -1,0 +1,44 @@
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  margin: 0;
+  background: #f4f7fd;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background: white;
+}
+
+.board {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+
+.column {
+  background: #e4ebfa;
+  padding: 15px;
+  border-radius: 10px;
+  width: 300px;
+}
+
+.tasks-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.task {
+  background: white;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+dialog {
+  border: none;
+  padding: 20px;
+  border-radius: 10px;
+}
