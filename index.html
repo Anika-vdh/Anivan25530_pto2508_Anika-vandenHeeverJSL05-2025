@@ -85,17 +85,26 @@
         </div>
 
         <label>Title</label>
-        <input id="title-input" required />
+<input 
+  id="title-input" 
+  placeholder="e.g. Take a little break" 
+  required 
+/>
 
         <label>Description</label>
-        <textarea id="desc-input"></textarea>
-
+<textarea 
+  id="desc-input" 
+  placeholder="e.g. Pet your dog, have a cup of coffee, dance to your favourite song and come back to conquer this challenge."
+></textarea>
         <label>Status</label>
         <select id="select-status">
           <option value="todo">todo</option>
           <option value="doing">doing</option>
           <option value="done">done</option>
         </select>
+
+        <label>Title</label>
+
 
         <input type="submit" value="Create Task" class="submit-btn" />
       </form>
